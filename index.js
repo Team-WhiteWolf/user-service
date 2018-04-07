@@ -11,7 +11,7 @@ const sqlAcc = {
 };
 
 const queueSvc = azure.createServiceBusService(azureKey);
-const sqlConnection = mysql.createConnection(sqlAcc);
+//const sqlConnection = mysql.createConnection(sqlAcc);
 
 var message = {
 	keks: 'test',
