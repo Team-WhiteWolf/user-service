@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Team-WhiteWolf/user-service#readme",
   "dependencies": {
-    "azure": "^2.2.1-preview"
+    "azure": "^2.2.1-preview",
+    "azure-storage": "^2.8.1"
   }
 }
