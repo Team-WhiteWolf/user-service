@@ -22,6 +22,6 @@
   "homepage": "https://github.com/Team-WhiteWolf/user-service#readme",
   "dependencies": {
     "azure": "^2.2.1-preview",
-    "mysql": "^2.15.0"
+    "mysql2": "^1.5.3"
   }
 }
