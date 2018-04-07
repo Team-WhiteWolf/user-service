@@ -1,0 +1,23 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "The user service component of the white wolf project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-WhiteWolf/user-service.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Team-WhiteWolf/user-service/issues"
+  },
+  "homepage": "https://github.com/Team-WhiteWolf/user-service#readme",
+  "dependencies": {
+    "azure": "^2.2.1-preview"
+  }
+}
