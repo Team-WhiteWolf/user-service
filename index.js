@@ -34,7 +34,7 @@ queueSvc.receiveQueueMessage('user-send', function(error, receivedMessage){
 	}
 });
 
-sqlConnection.connect(function(err) {
-	if (err) throw err;
-	console.log("Connected!");
-});
+//sqlConnection.connect(function(err) {
+//	if (err) throw err;
+//	console.log("Connected!");
+//});
