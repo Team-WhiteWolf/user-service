@@ -1,6 +1,9 @@
-var http = require('http');
+var azure = require('azure-storage');
+var queueSvc = azure.createQueueService();
 
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('Keksdose');
-}).listen(process.env.PORT || 8080);
+queueSvc.createMessage('user-send', "Hello world!", function(error, results, response){
+	if(!error){
+		console.log(error);
+	}
+	console.log('sth happend');
+});
