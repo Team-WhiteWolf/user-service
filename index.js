@@ -11,7 +11,7 @@ const sqlAcc = {
 };
 
 const queueSvc = azure.createServiceBusService(azureKey);
-//const sqlConnection = mysql.createConnection(sqlAcc);
+const sqlConnection = mysql.createConnection(sqlAcc);
 
 var message = {
 	keks: 'test',
@@ -34,7 +34,7 @@ queueSvc.receiveQueueMessage('user-send', function(error, receivedMessage){
 	}
 });
 
-//sqlConnection.connect(function(err) {
-//	if (err) throw err;
-//	console.log("Connected!");
-//});
+sqlConnection.connect(function(err) {
+	if (err) throw err;
+	console.log("Connected!");
+});
