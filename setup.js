@@ -1,9 +1,9 @@
 
 const mysql = require('mysql2');
 var config = {
-    host: 'icon-db.mysql.database.azure.com',
-    user: 'wolf@icon-db',
-    password: 'EJ6chESAmK',
+    host: 'ww-data-host.mysql.database.azure.com',
+    user: 'database@ww-data-host',
+    password: 'uJHeCu3P!',
     port: 3306,
     ssl: true
 };
