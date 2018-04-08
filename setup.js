@@ -97,6 +97,7 @@ conn.connect(
                     throw err;
                 }
             });
+            conn.end();
 
 
         }
