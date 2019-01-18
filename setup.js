@@ -19,11 +19,11 @@ conn.connect(
             console.log("Connection established.");
             var sql = "DROP DATABASE userDb;";
 
-            conn.query(sql, function (err, results, fields) {
-                if (err) {
-                    throw err;
-                }
-            });
+            //conn.query(sql, function (err, results, fields) {
+            //    if (err) {
+            //        throw err;
+            //    }
+            //});
             sql =[
                 "CREATE Database userDb;",
                 "USE userDb CREATE TABLE `User` (`id` varchar(255) NOT NULL,`name` TEXT NOT NULL UNIQUE,`password` varchar(255) NOT NULL,`hashAlgo` varchar(255) NOT NULL,`address` TEXT NOT NULL,`eMail` TEXT NOT NULL UNIQUE,`phoneNumber` DECIMAL NOT NULL,PRIMARY KEY (`id`));",
@@ -48,4 +48,3 @@ conn.connect(
 
         }
     });
-
